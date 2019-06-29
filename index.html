@@ -6,13 +6,42 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="assets/schedule.js" type="text/javascript"></script>
+	
 	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	
+        <div class="container">
+        <div class="jumbotron text-center bg-success text-white">
+            <h1>Cross Country Train Schedule</h1>
+        </div>
+        
+<!-- Creating the table and headers for the schedule -->
+        
+        <div class="panel panel-success text-success">
+        <div class="panel-heading"><h3>Train Arrival Times</h3></div>
+         <div class="panel-body">
+                <table class="table">
+                <thead>
+                    <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (In Minutes)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                    </tr>
+                    </thead>
+        
+<!-- additional rows entered by user -->
+        <tbody id="add-row"></tbody>
+                </table>
+                </div>
+                </div>
+        
+
+<!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/schedule.js" type="text/javascript"></script>
 </body>
 </html>
