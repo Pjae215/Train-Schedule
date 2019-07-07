@@ -20,8 +20,8 @@ $(document).ready(function(){
     $("#add-train").on("click", function() {
     event.preventDefault();
 
-    //error in getting validation to submit to database...scope issue maybe
-$("#form-group").checkValidity();
+    //validation works but then it won't submit to database...scope issue 
+//$("#form-group").checkValidity();
 
 // Storing and retreiving new train data
         name = $("#train-name").val().trim();
