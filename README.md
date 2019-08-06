@@ -1,5 +1,5 @@
 # Train-Schedule
-### PennLPS Bootcamp Week #6 Assignment
+### PennLPS Bootcamp Week #7 Assignment
 
 Users can check the expected time of arrival for their train and the frequency in which their train arrives. If their train is not listed, the user can input information to have their train added to the schedule. 
 
