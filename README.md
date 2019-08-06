@@ -1,7 +1,21 @@
 # Train-Schedule
-Train Schedules
+### PennLPS Bootcamp Week #6 Assignment
 
-This train schedule application uses moments.js and firebase to show arrival and departure times. You will be able to look for the train that goes to your destination and if that train is not listed you may add it to the list for others to see.
+Users can check the expected time of arrival for their train and the frequency in which their train arrives. If their train is not listed, the user can input information to have their train added to the schedule. 
 
-Here's the link to access the train schedule:
+The train scheduler stores data in Firebase for data persistence and retreives information from the database on load. Schedules are refreshed reflect dynamic arrival and departure times by using Moment.js  
+
+Access the train scheduler here:
+
 https://pjae215.github.io/Train-Schedule/
+
+
+
+### Resources
+* JavaScript
+* jQuery
+* Bootstrap Framework
+* HTML5
+* CSS3
+* Firebase
+* Moment.js

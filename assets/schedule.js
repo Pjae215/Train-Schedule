@@ -20,8 +20,6 @@ $(document).ready(function(){
     $("#add-train").on("click", function() {
     event.preventDefault();
 
-    //validation works but will not submit to database...scope issue maybe
-//$("#form-group").checkValidity();
 
 // Storing and retreiving new train data
         name = $("#train-name").val().trim();
@@ -40,6 +38,8 @@ $(document).ready(function(){
 
         $("form")[0].reset();
     });
+//validation works but will not submit to database...scope issue maybe
+//$("#form-group").checkValidity();
 //using snapsot of db to do calcs
     database.ref().on("child_added", function(childSnapshot) {
         //var nextArr;
@@ -68,10 +68,10 @@ $(document).ready(function(){
 
     database.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function(snapshot) {
         // Updating html
-        $("#name-display").html(snapshot.val().name);
-        $("#email-display").html(snapshot.val().email);
-        $("#age-display").html(snapshot.val().age);
-        $("#comment-display").html(snapshot.val().comment);
+        $("#train-name").html(snapshot.val().name);
+        $("#destination").html(snapshot.val().destination);
+        $("#first-train").html(snapshot.val().firstTrain);
+        $("#frequency").html(snapshot.val().minAway);
     });
 });
     
